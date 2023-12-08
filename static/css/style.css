@@ -1,0 +1,71 @@
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+.title {
+    background-color: beige;
+    color: #333;
+    margin-left: 3%;
+}
+
+.flex-container{
+    display: flex;
+    width: 100vw; 
+    height: 80vh;
+}
+
+.consultingHistoryContainer{
+    width: 20%;
+    height:100%;
+    background-color:darkolivegreen;
+    text-align: center;
+    color:beige;
+    padding: 3%;
+}
+
+.questionAdvisorContainer{
+    width: 80%;
+    height:100%;
+    background-color:rgb(245, 245, 230);
+    padding: 3%;
+}
+
+.drop-down-menu{
+    margin:3%;
+}
+
+form {
+    margin-bottom: 20px;
+    margin: 3%;
+}
+
+textarea {
+    margin-top: 1%;
+    width: 100%;
+}
+
+button {
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:2%;
+    margin-top: 3%;
+    border-radius: 10px 10px 10px;
+}
+
+button:hover {
+    background-color: olive;
+}
+
+#suggestions {
+    margin: 3%;
+    margin-top: 20px;
+    background-color: beige;
+    color:black;
+    min-height: 40%;
+    padding:1% 3%;
+}

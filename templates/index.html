@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSA Interview Question Suggesion Interface</title>
+    <!--
+    <link rel="stylesheet" href="./static/css/style.css">
+    -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class = "title">
+        <h1>CSA Interview Question Suggestions</h1>
+    </div>
+
+    <div class = flex-container>
+    <div class="consultingHistoryContainer">
+        <h2>Consulting History</h2>
+        <ul id="consultingHistoryList"></ul>
+    </div>
+
+    <div class = "questionAdvisorContainer">
+        <h2>Question Advisor</h2>
+
+        <div class = "drop-down-menu">
+            <label for="promptType">Select Prompt Type:</label>
+            <select id="promptType">
+                <option value="In-context Learning">In-Context Learning Prompt</option>
+                <option value="Zero Shot">Zero-Shot Prompt</option>
+                <option value="Chain of Thought">Chain-of-Thoughts Prompt</option>
+            </select>
+        </div>
+
+        <form id="interviewForm">
+            <label for="interviewHistory">Enter Interview History:</label>
+            <textarea id="interviewHistory" name="interviewHistory" rows="4" cols="50"></textarea>
+            <button type="button" onclick="submitInterview()">Generate Suggestions</button>
+        </form>
+
+        <div id="suggestions"> 
+            <h2>Suggestions:</h2>
+        </div>
+    </div>
+    </div>
+
+    <script src="{{ url_for('static', filename = 'js/index.js') }}"></script>
+</body>
+</html>
