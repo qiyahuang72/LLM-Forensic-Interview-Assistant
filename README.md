@@ -1,4 +1,4 @@
-# 🔍 LLM Forensic Interview Assistant
+# LLM Forensic Interview Assistant
 
 > An AI-powered web application that assists police officers in conducting forensic interviews with children in child sexual abuse (CSA) investigations — suggesting safe, non-leading questions in real time using GPT-3.5.
 
@@ -85,8 +85,6 @@ Create a `.env` file in the root directory:
 ```
 OPENAI_API_KEY=your_openai_api_key_here
 ```
-
-> ⚠️ Never commit your `.env` file. It is already listed in `.gitignore`.
 
 ### Run the app
 
